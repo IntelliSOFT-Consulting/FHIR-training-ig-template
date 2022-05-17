@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="329f09da-0fc9-419d-9575-ace68954426A"/>
+  <meta>
+    <profile value="https://intellisoft-consulting.github.io/FHIR-training-ig-template/StructureDefinition/fhir-training-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>moses Mutesa </b> female, DoB: 1988-03-02 ( id: NA121212)</p></div>
+  </text>
+  <identifier>
+    <system value="http/fhir-trining/patient"/>
+    <value value="NA121212"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Mutesa"/>
+    <given value="moses"/>
+  </name>
+  <gender value="female"/>
+  <birthDate value="1988-03-02"/>
+</Patient>

@@ -11,7 +11,7 @@
   "title": "Intelisoft FHIR TRAINING IG",
   "status": "draft",
   "experimental": true,
-  "date": "2022-05-13T07:34:56+00:00",
+  "date": "2022-05-17T13:18:13+00:00",
   "publisher": "Intelisoft",
   "contact": [
     {
@@ -37,7 +37,7 @@
   "dependsOn": [
     {
       "id": "hl7tx",
-      "uri": "http://terminology.hl7.org",
+      "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId": "hl7.terminology.r4",
       "version": "3.1.0"
     },
@@ -372,11 +372,39 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/fhir-training-patient"
+        },
+        "name": "Fhir Training Patient Profile",
+        "description": "Fhir Training Patient Profile",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/openelis-diagnostic-report"
         },
         "name": "OpenELIS Diagnostic Report",
         "description": "DiagnosticReport resource created by a LIS",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/329f09da-0fc9-419d-9575-ace68954426A"
+        },
+        "name": "Example fhir-training Patient",
+        "description": "Example fhir-trining Patient",
+        "exampleCanonical": "https://intellisoft-consulting.github.io/FHIR-training-ig-template/StructureDefinition/fhir-training-patient"
       }
     ],
     "page": {

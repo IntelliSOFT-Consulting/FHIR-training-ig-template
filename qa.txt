@@ -1,15 +1,19 @@
 ﻿FHIRTRAININGIG : Validation Results
 =========================================
 
-err = 0, warn = 2, info = 0
-IG Publisher Version: 1.1.119
-Generated Fri May 13 07:36:23 UTC 2022. FHIR version 4.0.1 for fhirtraining.ig#0.1.0 (canonical = https://intellisoft-consulting.github.io/FHIR-training-ig-template)
- Build Errors : 0 / 1 / 0
+err = 1, warn = 1, info = 0
+IG Publisher Version: 1.1.120
+Generated Tue May 17 13:20:23 UTC 2022. FHIR version 4.0.1 for fhirtraining.ig#0.1.0 (canonical = https://intellisoft-consulting.github.io/FHIR-training-ig-template)
+ Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-fhirtraining.ig : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Patient-329f09da-0fc9-419d-9575-ace68954426A : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-fhir-training-patient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-openelis-diagnostic-report : 0 / 1 / 1
 </table>
 == n/a ==
-WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 == fsh-generated/resources/ImplementationGuide-fhirtraining.ig.json ==
+== fsh-generated/resources/Patient-329f09da-0fc9-419d-9575-ace68954426A.json ==
+ERROR: Patient/329f09da-0fc9-419d-9575-ace68954426A: Patient.identifier[0]: Identifier.system must be an absolute reference, not a local reference
+== fsh-generated/resources/StructureDefinition-fhir-training-patient.json ==
 == fsh-generated/resources/StructureDefinition-openelis-diagnostic-report.json ==
 WARNING: StructureDefinition.where(url = 'https://intellisoft-consulting.github.io/FHIR-training-ig-template/StructureDefinition/openelis-diagnostic-report'): The Implementation Guide contains no examples for this profile

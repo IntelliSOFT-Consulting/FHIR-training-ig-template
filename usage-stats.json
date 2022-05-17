@@ -4,6 +4,12 @@
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
+    "Patient": [
+      {
+        "url": "https://intellisoft-consulting.github.io/FHIR-training-ig-template/StructureDefinition/fhir-training-patient",
+        "title": "Fhir Training Patient Profile"
+      }
+    ],
     "DiagnosticReport": [
       {
         "url": "https://intellisoft-consulting.github.io/FHIR-training-ig-template/StructureDefinition/openelis-diagnostic-report",
@@ -33,7 +39,13 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [

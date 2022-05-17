@@ -1,0 +1,30 @@
+{
+  "resourceType": "Patient",
+  "id": "329f09da-0fc9-419d-9575-ace68954426A",
+  "meta": {
+    "profile": [
+      "https://intellisoft-consulting.github.io/FHIR-training-ig-template/StructureDefinition/fhir-training-patient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>moses Mutesa </b> female, DoB: 1988-03-02 ( id: NA121212)</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http/fhir-trining/patient",
+      "value": "NA121212"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "Mutesa",
+      "given": [
+        "moses"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1988-03-02"
+}

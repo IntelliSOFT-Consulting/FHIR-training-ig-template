@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "Intelisoft FHIR TRAINING IG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "true"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2022-05-13T07:34:56+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-05-17T13:18:13+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Intelisoft"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -44,8 +44,8 @@
      fhir:index 0;
      fhir:Element.id [ fhir:value "hl7tx" ];
      fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "http://terminology.hl7.org";
-       fhir:link <http://terminology.hl7.org>
+       fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology";
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.1.0" ]
@@ -357,12 +357,43 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://intellisoft-consulting.github.io/FHIR-training-ig-template/StructureDefinition/fhir-training-patient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fhir-training-patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Fhir Training Patient Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Fhir Training Patient Profile" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://intellisoft-consulting.github.io/FHIR-training-ig-template/StructureDefinition/openelis-diagnostic-report>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/openelis-diagnostic-report" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "OpenELIS Diagnostic Report" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DiagnosticReport resource created by a LIS" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://intellisoft-consulting.github.io/FHIR-training-ig-template/Patient/329f09da-0fc9-419d-9575-ace68954426A>;
+         fhir:Reference.reference [ fhir:value "Patient/329f09da-0fc9-419d-9575-ace68954426A" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example fhir-training Patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example fhir-trining Patient" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://intellisoft-consulting.github.io/FHIR-training-ig-template/StructureDefinition/fhir-training-patient";
+         fhir:link <https://intellisoft-consulting.github.io/FHIR-training-ig-template/StructureDefinition/fhir-training-patient>
+       ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
